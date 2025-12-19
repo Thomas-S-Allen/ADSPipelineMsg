@@ -121,7 +121,9 @@ class TestDenormalizedRecord(unittest.TestCase):
              'year': u'2015',
              'series': u'series name here',
              'publisher': u'Zenodo',
-             'version': u'1.0.0'}
+             'version': u'1.0.0',
+             'pub_abbrev': u'Test Pub.',
+        }
 
         r = DenormalizedRecord(**solr_record)
 

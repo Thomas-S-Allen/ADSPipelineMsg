@@ -90,6 +90,7 @@ message BibRecord {
                 string series = 11;
                 string publisher = 12;
                 string version = 13;
+                string pub_abbrev = 14;
 
                 message PublicationName {
                     string type = 1;

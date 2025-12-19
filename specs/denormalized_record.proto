@@ -107,8 +107,9 @@ message DenormalizedRecord {
     string series = 98;
     string publisher = 99;
     string version = 100;
+    string pub_abbrev = 101;
     
-    // current highest id: 100
+    // current highest id: 101
     
     
 }
