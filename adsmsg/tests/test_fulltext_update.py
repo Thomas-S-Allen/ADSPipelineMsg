@@ -17,7 +17,7 @@ class TestFulltextUpdate(unittest.TestCase):
 
 
     def test_is_valid(self):
-        fulltext_update = FulltextUpdate(acknowledgements='foo', dataset=['bar'], facility=['baz'])
+        fulltext_update = FulltextUpdate(acknowledgements='foo', dataset=['bar'], facility=['baz'], das='xyz')
         fulltext_update.bibcode = "fta"
         fulltext_update.body = "Introduction\nTHIS IS AN INTERESTING TITLE\n"
         self.assertTrue(fulltext_update.is_valid())

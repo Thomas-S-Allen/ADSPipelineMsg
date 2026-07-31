@@ -9,4 +9,5 @@ message FulltextUpdate {
     string acknowledgements = 4;
     repeated string dataset = 5;
     repeated string facility = 6;
+    string das = 7;
 }

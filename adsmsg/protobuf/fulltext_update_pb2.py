@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x15\x66ulltext_update.proto\x12\x06\x61\x64smsg\x1a\x0cstatus.proto\"\x8c\x01\n\x0e\x46ulltextUpdate\x12\x0f\n\x07\x62ibcode\x18\x01 \x01(\t\x12\x0c\n\x04\x62ody\x18\x02 \x01(\t\x12\x1e\n\x06status\x18\x03 \x01(\x0e\x32\x0e.adsmsg.Status\x12\x18\n\x10\x61\x63knowledgements\x18\x04 \x01(\t\x12\x0f\n\x07\x64\x61taset\x18\x05 \x03(\t\x12\x10\n\x08\x66\x61\x63ility\x18\x06 \x03(\tb\x06proto3'
+  serialized_pb=b'\n\x15\x66ulltext_update.proto\x12\x06\x61\x64smsg\x1a\x0cstatus.proto\"\x99\x01\n\x0e\x46ulltextUpdate\x12\x0f\n\x07\x62ibcode\x18\x01 \x01(\t\x12\x0c\n\x04\x62ody\x18\x02 \x01(\t\x12\x1e\n\x06status\x18\x03 \x01(\x0e\x32\x0e.adsmsg.Status\x12\x18\n\x10\x61\x63knowledgements\x18\x04 \x01(\t\x12\x0f\n\x07\x64\x61taset\x18\x05 \x03(\t\x12\x10\n\x08\x66\x61\x63ility\x18\x06 \x03(\t\x12\x0b\n\x03\x64\x61s\x18\x07 \x01(\tb\x06proto3'
   ,
   dependencies=[status__pb2.DESCRIPTOR,])
 
@@ -77,6 +77,13 @@ _FULLTEXTUPDATE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='das', full_name='adsmsg.FulltextUpdate.das', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -90,7 +97,7 @@ _FULLTEXTUPDATE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=48,
-  serialized_end=188,
+  serialized_end=201,
 )
 
 _FULLTEXTUPDATE.fields_by_name['status'].enum_type = status__pb2._STATUS

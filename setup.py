@@ -18,7 +18,7 @@ with open('requirements.txt') as f:
 with open('dev-requirements.txt') as f:
     dev_required = f.read().splitlines()
 
-def get_git_version(default="v0.0.1"):
+def get_git_version(default="v1.3.18"):
     try:
         p = Popen(['git', 'describe', '--tags'], stdout=PIPE, stderr=PIPE)
         p.stderr.close()
@@ -30,8 +30,8 @@ def get_git_version(default="v0.0.1"):
 
 setup(
     name='adsmsg',
-    version=get_git_version(default="v0.0.1"),
-    url='http://github.com/adsabs/flask-discoverer/',
+    version=get_git_version(default="v1.3.18"),
+    url='http://github.com/adsabs/ADSPipelineMsg/',
     license='MIT',
     author='NASA/SAO ADS',
     description='Interpipeline communication messages',
